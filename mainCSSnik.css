@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    text-align: center;
+    border-style: solid;
+}
+
+.experiencecontainer{
+    text-align: center;
+    border-style: solid;
+}
+
+.normalPic {
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+/******************** Navigation ********************/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow:  0 1px 8px #ddd;
+    
+}
+
+header li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    font-weight: bold;
+    color: blue;
+
+}
+
+a:hover {
+    background-color: grey;
+    border-radius: 50px;
+
+}
+
+
+.hidden-nav {
+    background-color: hsla(0, 0%, 0%, .8 );
+    height: 70px;
+}
+
+@media screen and (min-width: 1011px) {
+
+    .hidden-nav {
+        display: none;
+    }
+
+    .container {
+        margin-top: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .myHobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    .container{
+        margin-top: 50px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    #aboutMe p{
+
+        margin-top: 3px;
+        margin-bottom: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+}
