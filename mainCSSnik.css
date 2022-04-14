@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    text-align: center;
+    border-style: solid;
+}
+
+.experiencecontainer{
+    text-align: center;
+    border-style: solid;
+}
+
+.normalPic {
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+#nikPicContainer{
+    transition: 3s 0s;
+}
+#nikPicContainer:hover{
+    transform: scale(125%);
+}
+
+/******************** Navigation ********************/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow:  0 1px 8px #ddd;
+    
+}
+
+header li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    font-weight: bold;
+    color: blue;
+
+}
+
+a:hover {
+    background-color: grey;
+    border-radius: 50px;
+
+}
+
+
+
+
+
+.hidden-nav {
+    background-color: hsla(0, 0%, 0%, .8 );
+    height: 70px;
+}
+
+
+/********** Small Screen **********/
+
+@media screen and (max-width: 640px) {
+
+    /* hide nav links */
+    header {
+        display: none;
+    }
+    
+    .hidden-nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-two {
+        display: flex;
+        height: 60px;
+        
+    }
+    
+
+    .dropdown {
+        position: absolute;
+        display: block;
+        left: 0px;
+
+    }
+
+   
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 600px;
+        left: 0px;
+        z-index: 1;
+
+    }
+
+    .dropdown-content a {
+        color: #ffffffbe;
+        font-size: 15px;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: block;
+        
+        
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        
+    }
+
+    /* burger menu */
+    .burger div {
+        height: 4px;
+        background-color: #f1f1f1;
+        border-radius: 25px;
+        margin: 6px 0;
+        transition: 0.5s;
+    }
+    
+    .burger {
+        position: relative;
+        z-index: 1;
+        width: 30px;
+        display: block;
+        padding: 10px 10px;
+    }
+    .one {
+        width: 30px;
+    }
+    
+    .two {
+        width: 20px;
+    }
+    
+    .three {
+        width: 25px;
+    }
+
+    .burger:hover div {
+        width: 30px;
+        
+    }
+
+    /********** Responsive Grid Small **********/
+    .container {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .intro, .aboutMe, .mySkills, .myHobbies {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySkills, .myHobbies {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .smallImg {
+        height: 200px;
+        width: 200px;
+    }
+
+    .normalPic {
+        height: 200px;
+        width: 200px;
+    }
+ 
+    #nikPic {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1010px) {
+
+    .hidden-nav {
+        display: none;
+    }
+
+    .container {
+        margin-top: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .myHobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    form {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+}
+
+/********** Large Screen **********/
+
+@media screen and (min-width: 1011px) {
+
+    .hidden-nav {
+        display: none;
+    }
+
+    .container {
+        margin-top: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .myHobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    .container{
+        margin-top: 50px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+}
+
+@media screen and (min-width: 1011px) {
+
+    .hidden-nav {
+        display: none;
+    }
+
+    .container {
+        margin-top: 50px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mySkills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .myHobbies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    .container{
+        margin-top: 50px;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    #aboutMe p{
+
+        margin-top: 3px;
+        margin-bottom: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+}
