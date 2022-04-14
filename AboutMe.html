@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Nikhil Srivastava Website</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Nikhil Srivastava" />
+        <meta name="keywords" content="Nikhil Srivastava, resume, projects, achievements skills, hobbies" />
+        <meta name="description" content="resume" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="mainCSSnik.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+
+    <header>
+        
+        <nav class="nav-bar">   
+            <ul class="nav-links">
+                <li><a href="AboutMe.html" >Home</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!--Dropdown Navigation Bar - Small Screen-->
+    <nav>
+        <div class="hidden-nav">
+            <div class="dropdown">
+                <div class="burger">
+                    <a href="#" class="burger">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#aboutMe" >Home</a>
+                    <a href="Resume.html">Resume</a>
+                </div>
+            </div>
+        
+        </div>
+    </nav>
+
+    <section class="container" id="nikPicContainer">
+        <h1>Hi! I'm Nik!</h1>
+        <div class="intro">
+            <img src="pics/mypic.jpg" alt="picture of Nik" id="nikPic">
+        </div>
+    </section>
+
+    <main id="mainContent">
+        <section class="container">
+            <h2>About Me</h2>
+            <br><br>
+            <div class="aboutMe" id="aboutMe">
+                <p>My name is Nik, I'm a 22 year old, and I'm in my first year BCIS student at Mount Royal University. I was born and raised in a small town in northern manitoba, by the name of The Pas.
+                    After spending a few years trying different majors across two different universities, I decided to persue a degree in Computer Information Systems, where I am learning Computer Science 
+                    and Business. I really like building PC's and I enjoy learning new languages and programming skills.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>My hobbies</h2>
+            <br><br>
+            <div class="aboutMe" id="aboutMe">
+                <p>Some of my hobbies include, gaming, building computers, and of course, coding! I love to learn new languages and implementing them with new technologies to 
+                    achieve a great utility with the applications.
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+
+            <div class="contactForm" id="contactMe">
+                <h3>Contact Me!</h3>
+                <form method="post" action="nsriv531@mtroyal.ca" tabindex="0">
+                <fieldset>
+        
+                    <div class="form-item" id="form-1">
+                        <br>
+                        <label>Name:</label>
+                        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+                        <br><br>
+                    </div>
+    
+                    <div class="form-item" id="form-2">
+                        <label for="feedback">Comments:</label>
+                        <textarea id="feedback" name="comment" rows="3" cols="25"></textarea><br>
+                
+                    </div><br>
+    
+                    <div class="form-item" id="form-3" >
+                        <label>Email: <input class="focus" name="email" type="email" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            placeholder="email@domain.com" required></label>                    
+                    </div>
+                    <br><br>
+                    <input class="pointer" type="submit" value="Submit">
+                    <input class="pointer" type="reset" value="reset">    
+                </fieldset>
+            </form>
+            </div>
+    
+        </section>
+    
+
+
+</body>
+
+
+</html>
